@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <center>
+  <h1>Calculator</h1>
+  </center>
+
+  <table class="calculator">
+    <tr>
+    <td colspan="3" class="display-block"><input type="text" id="result" disabled></td>
+    <td><input class="fun-button special" type="button" value="C" onclick="clearScreen()"></td>
+  </tr>
+
+  <tr>
+    <td><input type="button" id="key" value="1" class="button" onclick="display('1')"></td>
+    <td><input type="button" id="key" value="2" class="button" onclick="display('2')"></td>
+    <td><input type="button" id="key" value="3" class="button" onclick="display('3')"></td>
+    <td><input type="button" id="key" class="fun-button" onclick="display('/')" value="/"></td>
+  </tr>
+
+  <tr>
+    <td><input type="button" id="key" value="4" class="button" onclick="display('4')"></td>
+    <td><input type="button" id="key" value="5" class="button" onclick="display('5')"></td>
+    <td><input type="button" id="key" value="6" class="button" onclick="display('6')"></td>
+    <td><input type="button" id="key" class="fun-button" onclick="display('-')" value="-"></td>
+  </tr>
+
+  <tr>
+    <td><input type="button" id="key" value="7" class="button" onclick="display('7')"></td>
+    <td><input type="button" id="key" value="8" class="button" onclick="display('8')"></td>
+    <td><input type="button" id="key" value="9" class="button" onclick="display('9')"></td>
+    <td><input type="button" id="key" class="fun-button" onclick="display('+')" value="+"></td>
+  </tr>
+
+  <tr>
+    <td><input type="button" id="key" value="." class="button" onclick="display('.')"></td>
+    <td><input type="button" id="key" value="0" class="button" onclick="display('0')"></td>
+    <td><input type="button" id="key" value="=" class="button special" onclick="calculate()"></td>
+    <td><input type="button" id="key" class="fun-button" onclick="display('*')" value="*"></td>
+  </tr>
+  </table>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
